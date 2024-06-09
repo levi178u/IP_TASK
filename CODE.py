@@ -129,6 +129,8 @@ def detect_arena_parameters(maze_image):
 
     return arena_parameters
 
+#------------------------COOKING DONE--------------------------------
+
 file_name = "test_images/maze_0.png"
 
 input_maze_image = cv.imread(f'{file_name}',1)
@@ -158,7 +160,7 @@ maze_0_dict= {
                                         ['Shop_8', 'Pink',  'Circle',   [670, 170]],
                                         ['Shop_9', 'Skyblue','Circle', [670, 130]]]}
 
-#-------------------------
+
 print()
 passed = False
 for i,param in enumerate(output_params):
@@ -169,4 +171,3 @@ for i,param in enumerate(output_params):
     else:
         passed = False
 
-#------------------------COOKING DONE--------------------------------
